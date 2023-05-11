@@ -56,13 +56,15 @@ class Room{
 
 
 class SleepingRoom extends Room {
-    constructor(personCapacity) {
+    constructor(personCapacity,flootNum,roomnum,price,isBooked) {
+      super(flootNum,roomnum,price,isBooked);
       this.personCapacity=personCapacity;
     }
 }
 
 class RoomWithView extends Room {
-    constructor(view,numberOfBeds) {
+    constructor(view,numberOfBeds,flootNum,roomnum,price,isBooked) {
+      super(flootNum,roomnum,price,isBooked);
       this.view=view;
       this.numberOfBeds=numberOfBeds;
     }
